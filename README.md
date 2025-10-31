@@ -19,8 +19,8 @@ This is the starting of bot-assist project inspired by linkedin post of Yash Agg
 	 	auth_handlers.go
 	/middlerware/
 	 	auth_middleware.go
-			main.go
-			go.mod
-			go.sum
+	main.go
+	go.mod
+	go.sum
 
 ```
