@@ -1,0 +1,15 @@
+version: "3"
+
+tasks:
+  # The main task to execute the Ent code generation
+  ent:generate:
+    desc: "Generates the Ent client code into ./ent/generated from ./ent/schema."
+    cmds:
+      # 1. Execute the Ent generation command
+      - go run entgo.io/ent/cmd/ent generate ./ent/schema --target ./ent/generated
+
+  # Cleanup task (optional, but useful)
+  ent:clean:
+    desc: "Removes the generated Ent directory."
+    cmds:
+      - rm -rf ./ent/generated
